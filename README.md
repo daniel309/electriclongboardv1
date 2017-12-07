@@ -8,10 +8,6 @@ Recommended parts: http://www.electric-skateboard.builders/t/new-builder-list-of
 http://www.elektro-skateboard.de/wiki/wissenswertes/strom-spannung-reichweite-vii
 http://calc.esk8.today
 
-## Continuous Power Draw
-* 4P: max rated current per pack is 2C, 5.5A/cell → max 22A continuous draw
-* 7P: max rated current per pack is 2C, 5.5A/cell → max 38.5A continuous draw
-
 ## Drivetrain Calculations
 * 6S, 245kV (SK3), 70mm, 36t/15t → 29.1 km/h @ 15.4A
 * 6S, 245kV (SK3), 80mm, 36t/15t → 33.3 km/h @ 21.8A
@@ -74,6 +70,7 @@ DYI, 6s4p + 4s4p, from old laptop 18650 cells, with ebay 18650 holders
 
 ### Cell datasheet
 Panasonic NCR18650: 
+* <IMG height="150" src="http://www.dampfakkus.de/akkubilder/121.jpg" />
 * https://engineering.tamu.edu/media/4247819/ds-battery-panasonic-18650ncr.pdf
 * https://na.industrial.panasonic.com/sites/default/pidsa/files/ncr18650.pdf
 * Capacity: 2900mAh
@@ -87,6 +84,12 @@ Panasonic NCR18650:
 ### Max Power Draw Estimate
 vedder.se data logging videos show max 50A (clamped, VESC feature. Car ESCs don't clamp!), 37 km/h, 1200W draw during hardest acceleration: https://youtu.be/nGb-zt2Jp9k
 
+## Continuous Power Draw
+Battery pack
+* 4P: max rated current per pack is 2C, 5.5A/cell → max 22A continuous draw
+* 7P: max rated current per pack is 2C, 5.5A/cell → max 38.5A continuous draw
+
+Estimated cell draw amps, assuming 50A combined draw from pack (hill climb)
 4P pack
 * 50A / 4 = 12.5A per cell, Cell max: 5.5A → 2.3x above datasheet max!
 7P pack
